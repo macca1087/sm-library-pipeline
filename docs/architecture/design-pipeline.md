@@ -10,11 +10,6 @@ flowchart TB
         Excel["Excel"]
     end
 
-    Repo["GitHub repository"] --> CI["CI: run tests and linting"]
-    CI --> Deploy["CD: deploy pipeline"]
-    Deploy --> Fabric["Microsoft Fabric"]
-    Fabric --> Ingest["Ingest data"]
-
     CSV --> Ingest
     JSON --> Ingest
     Text --> Ingest
